@@ -53,16 +53,39 @@ const Hero = () => {
         <div className="absolute inset-0 bg-slate-900/70"></div>
       </div>
 
-      <div className="absolute bottom-16 md:bottom-32 left-0 right-0 z-10 px-4">
+      {/* Mobile version - centered */}
+      <div className="md:hidden relative z-10 px-4 pt-12 pb-8">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto md:mx-0 text-center md:text-left w-full">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold mb-4 leading-tight">
               Excelência em <span className="text-primary-400">Manutenção Predial</span>
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-100 md:max-w-2xl">
+            <p className="text-lg mb-6 text-gray-100">
               Mais de 20 anos de experiência em engenharia civil, oferecendo soluções completas e seguras para seu patrimônio
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="flex flex-col gap-4 items-center">
+              <ButtonOutlined onClick={scrollToContact} icon={ArrowRight}>
+                Solicitar Orçamento
+              </ButtonOutlined>
+              <ButtonFilled onClick={() => scrollToSection('servicos')}>
+                Nossos Serviços
+              </ButtonFilled>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop version - left aligned */}
+      <div className="hidden md:block absolute bottom-32 left-0 right-0 z-10 px-4">
+        <div className="container mx-auto">
+          <div className="max-w-4xl text-left w-full">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+              Excelência em <span className="text-primary-400">Manutenção Predial</span>
+            </h1>
+            <p className="text-xl mb-8 text-gray-100 max-w-2xl">
+              Mais de 20 anos de experiência em engenharia civil, oferecendo soluções completas e seguras para seu patrimônio
+            </p>
+            <div className="flex flex-row gap-4 justify-start">
               <ButtonOutlined onClick={scrollToContact} icon={ArrowRight}>
                 Solicitar Orçamento
               </ButtonOutlined>
