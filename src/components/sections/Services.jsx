@@ -3,6 +3,20 @@ import { Building2, Droplets, Zap, Wrench, FileCheck, Paintbrush, Shield, Clipbo
 import ButtonFilled from '../ui/ButtonFilled';
 
 const Services = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const services = [
     {
       icon: Building2,
@@ -86,7 +100,7 @@ const Services = () => {
             </p>
             <div className="flex justify-center">
               <ButtonFilled
-                onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => scrollToSection('contato')}
                 size="md"
               >
                 Solicitar Orçamento Gratuito

@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Send, Calendar, User, Building, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, User, Building, MessageSquare } from 'lucide-react';
+import ButtonFilled from '../ui/ButtonFilled';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    condominium: '',
+    local: '',
     service: '',
-    date: '',
-    time: '',
-    message: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -35,11 +33,8 @@ const Contact = () => {
         name: '',
         email: '',
         phone: '',
-        condominium: '',
+        local: '',
         service: '',
-        date: '',
-        time: '',
-        message: '',
       });
 
       // Resetar status após 5 segundos
@@ -199,19 +194,19 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 font-medium mb-2" htmlFor="condominium">
-                    Nome do Condomínio
+                  <label className="block text-gray-700 font-medium mb-2" htmlFor="local">
+                    Local
                   </label>
                   <div className="relative">
                     <Building className="absolute left-3 top-3 text-gray-400" size={20} />
                     <input
                       type="text"
-                      id="condominium"
-                      name="condominium"
-                      value={formData.condominium}
+                      id="local"
+                      name="local"
+                      value={formData.local}
                       onChange={handleChange}
                       className="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                      placeholder="Nome do condomínio"
+                      placeholder="Endereço ou nome do condomínio"
                     />
                   </div>
                 </div>
@@ -237,68 +232,16 @@ const Contact = () => {
                   </select>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-gray-700 font-medium mb-2" htmlFor="date">
-                      Data Preferencial
-                    </label>
-                    <div className="relative">
-                      <Calendar className="absolute left-3 top-3 text-gray-400" size={20} />
-                      <input
-                        type="date"
-                        id="date"
-                        name="date"
-                        value={formData.date}
-                        onChange={handleChange}
-                        className="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-gray-700 font-medium mb-2" htmlFor="time">
-                      Horário Preferencial
-                    </label>
-                    <input
-                      type="time"
-                      id="time"
-                      name="time"
-                      value={formData.time}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    />
-                  </div>
+                <div className="pt-2">
+                  <ButtonFilled
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full !bg-green-600 hover:!bg-green-700 !text-white"
+                    icon={Send}
+                  >
+                    {isSubmitting ? 'Enviando...' : 'Solicitar Orçamento'}
+                  </ButtonFilled>
                 </div>
-
-                <div>
-                  <label className="block text-gray-700 font-medium mb-2" htmlFor="message">
-                    Mensagem
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows="4"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-none"
-                    placeholder="Descreva brevemente sua necessidade..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-primary-600 text-white px-6 py-4 rounded-lg font-semibold hover:bg-primary-700 transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? (
-                    <>Enviando...</>
-                  ) : (
-                    <>
-                      <Send size={20} />
-                      Enviar Solicitação
-                    </>
-                  )}
-                </button>
               </form>
             </div>
           </div>

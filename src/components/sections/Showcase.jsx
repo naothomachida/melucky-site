@@ -1,8 +1,9 @@
 import React from 'react';
-import fachadaImg from '../../assets/images/fachada-predios.jpg';
-import condominioImg from '../../assets/images/condominio-moderno.jpg';
-import edificioImg from '../../assets/images/edificio-comercial.jpg';
-import manutencaoImg from '../../assets/images/manutencao-predial.jpg';
+
+const fachadaImg = '/fachada-predios.jpg';
+const condominioImg = '/condominio-moderno.jpg';
+const edificioImg = '/edificio-comercial.jpg';
+const manutencaoImg = '/manutencao-predial.jpg';
 
 const Showcase = () => {
   return (

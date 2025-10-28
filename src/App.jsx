@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <Chatbot />
       </div>
     </Router>
   );

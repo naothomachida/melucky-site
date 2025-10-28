@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircle, Target, Eye, Heart } from 'lucide-react';
-import engenhariaImg from '../../assets/images/engenharia-principal.jpg';
+
+const engenhariaImg = '/shutter/3.jpg';
 
 const About = () => {
   return (
@@ -66,47 +67,65 @@ const About = () => {
           {/* Missão, Visão e Valores */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Missão */}
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-              <Target className="text-primary-600 mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Missão</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Garantir segurança, durabilidade e qualidade às edificações, oferecendo soluções técnicas
-                completas em manutenção predial e engenharia.
-              </p>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/shutter/1.jpeg"
+                alt="Missão Melucky Engenharia"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-8 text-center">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Missão</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Garantir segurança, durabilidade e qualidade às edificações, oferecendo soluções técnicas
+                  completas em manutenção predial e engenharia.
+                </p>
+              </div>
             </div>
 
             {/* Visão */}
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-              <Eye className="text-primary-600 mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Visão</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Ser reconhecida como referência em engenharia de manutenção predial no Sul do Brasil,
-                destacando-se pela excelência técnica e relacionamento de confiança.
-              </p>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/shutter/2.jpeg"
+                alt="Visão Melucky Engenharia"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-8 text-center">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Visão</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Ser reconhecida como referência em engenharia de manutenção predial no Sul do Brasil,
+                  destacando-se pela excelência técnica e relacionamento de confiança.
+                </p>
+              </div>
             </div>
 
             {/* Valores */}
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-              <Heart className="text-primary-600 mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Valores</h3>
-              <ul className="text-gray-700 text-left space-y-2">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary-600">•</span>
-                  <span>Ética e Transparência</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary-600">•</span>
-                  <span>Qualidade Técnica</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary-600">•</span>
-                  <span>Segurança</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary-600">•</span>
-                  <span>Comprometimento</span>
-                </li>
-              </ul>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/shutter/6.jpeg"
+                alt="Valores Melucky Engenharia"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Valores</h3>
+                <ul className="text-gray-700 text-left space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary-600">•</span>
+                    <span>Ética e Transparência</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary-600">•</span>
+                    <span>Qualidade Técnica</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary-600">•</span>
+                    <span>Segurança</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary-600">•</span>
+                    <span>Comprometimento</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -68,24 +68,34 @@ const Differentials = () => {
           </div>
 
           {/* Quote Section */}
-          <div className="bg-primary-700 rounded-2xl p-8 md:p-12 text-white relative overflow-hidden">
-            <div className="absolute top-0 right-0 opacity-10">
+          <div className="rounded-2xl p-8 md:p-12 text-white relative overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <img
+                src="/shutter/5.jpg"
+                alt="Melucky Engenharia"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/75"></div>
+            </div>
+
+            <div className="absolute top-0 right-0 opacity-10 z-10">
               <svg width="200" height="200" viewBox="0 0 200 200" fill="currentColor">
                 <path d="M45,0 L45,45 L0,45 L0,100 L55,100 L55,0 Z M145,0 L145,45 L100,45 L100,100 L155,100 L155,0 Z" />
               </svg>
             </div>
-            <div className="relative z-10">
+            <div className="relative z-20">
               <p className="text-2xl md:text-3xl font-semibold mb-6 leading-relaxed">
                 "A Melucky Engenharia entrega mais do que serviços — entrega tranquilidade técnica,
                 credibilidade e soluções completas para o ciclo de vida das edificações."
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-primary-700 font-bold text-xl">AP</span>
+                <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center">
+                  <span className="text-slate-900 font-bold text-xl">AP</span>
                 </div>
                 <div>
                   <p className="font-bold text-lg">Ana Paula</p>
-                  <p className="text-primary-200">Engenheira Civil - Fundadora</p>
+                  <p className="text-gray-200">Engenheira Civil - Fundadora</p>
                 </div>
               </div>
             </div>
