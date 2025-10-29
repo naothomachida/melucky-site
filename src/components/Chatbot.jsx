@@ -238,7 +238,7 @@ const Chatbot = () => {
   const handleWhatsAppRedirect = () => {
     const message = `Olá! Meu nome é ${leadData.nome}.\n\nTenho interesse em: ${leadData.interesse}\nTelefone: ${leadData.telefone}\nLocal do serviço: ${leadData.local}\n\nGostaria de receber um orçamento de manutenção predial da Melucky Engenharia.`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/5541999491772?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/5541995311272?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 

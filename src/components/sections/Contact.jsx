@@ -82,8 +82,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Telefone</h4>
-                    <a href="tel:+5541999491772" className="text-primary-600 hover:text-primary-700">
-                      (41) 9949-1772
+                    <a href="tel:+5541995311272" className="text-primary-600 hover:text-primary-700">
+                      (41) 99531-1272
                     </a>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const Contact = () => {
                   Prefere um atendimento mais rápido? Fale conosco pelo WhatsApp!
                 </p>
                 <a
-                  href="https://wa.me/5541999491772"
+                  href="https://wa.me/5541995311272"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition inline-flex items-center gap-2"
