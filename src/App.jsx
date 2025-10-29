@@ -4,6 +4,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Chatbot from './components/Chatbot';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <WhatsAppButton />
         <Chatbot />
       </div>
     </Router>
