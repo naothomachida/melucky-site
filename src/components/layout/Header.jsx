@@ -25,7 +25,7 @@ const Header = () => {
       {/* Top bar */}
       <div className="bg-slate-700 text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <a href="tel:+5541995311272" className="flex items-center gap-2 hover:text-primary-400 transition">
               <Phone size={16} />
               <span>(41) 99531-1272</span>
@@ -35,7 +35,7 @@ const Header = () => {
               <span>engenharia@melucky.com.br</span>
             </a>
           </div>
-          <div className="hidden md:block text-primary-400 font-medium">
+          <div className="text-primary-400 font-medium md:text-right w-full md:w-auto text-center">
             Melucky Engenharia | Curitiba, Paraná, Brasil
           </div>
         </div>
@@ -78,22 +78,41 @@ const Header = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4">
-            <button onClick={() => scrollToSection('home')} className="text-white hover:text-primary-400 transition font-medium text-left">
+          <div className="md:hidden mt-4 pb-4 flex flex-col gap-2">
+            <button onClick={() => scrollToSection('home')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
               Início
             </button>
-            <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-primary-400 transition font-medium text-left">
+            <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
               Sobre
             </button>
-            <button onClick={() => scrollToSection('servicos')} className="text-white hover:text-primary-400 transition font-medium text-left">
+            <button onClick={() => scrollToSection('servicos')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
               Serviços
             </button>
-            <button onClick={() => scrollToSection('diferenciais')} className="text-white hover:text-primary-400 transition font-medium text-left">
+            <button onClick={() => scrollToSection('diferenciais')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
               Diferenciais
             </button>
-            <ButtonOutlined onClick={() => scrollToSection('contato')} size="md">
-              Contato
-            </ButtonOutlined>
+            <div className="border-t border-slate-500 my-2"></div>
+            <a
+              href="https://wa.me/5541995311272"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-primary-400 transition font-medium text-left py-3 flex items-center gap-2"
+            >
+              <Phone size={18} />
+              <span>(41) 99531-1272</span>
+            </a>
+            <a
+              href="mailto:engenharia@melucky.com.br"
+              className="text-white hover:text-primary-400 transition font-medium text-left py-3 flex items-center gap-2"
+            >
+              <Mail size={18} />
+              <span>engenharia@melucky.com.br</span>
+            </a>
+            <div className="mt-2">
+              <ButtonOutlined onClick={() => scrollToSection('contato')} size="md">
+                Contato
+              </ButtonOutlined>
+            </div>
           </div>
         )}
       </nav>
