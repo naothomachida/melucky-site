@@ -50,16 +50,16 @@ const Header = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('home')} className="text-white hover:text-primary-400 transition font-medium">
+            <button onClick={() => scrollToSection('home')} className="text-white hover:text-primary-400 transition font-medium cursor-pointer">
               Início
             </button>
-            <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-primary-400 transition font-medium">
+            <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-primary-400 transition font-medium cursor-pointer">
               Sobre
             </button>
-            <button onClick={() => scrollToSection('servicos')} className="text-white hover:text-primary-400 transition font-medium">
+            <button onClick={() => scrollToSection('servicos')} className="text-white hover:text-primary-400 transition font-medium cursor-pointer">
               Serviços
             </button>
-            <button onClick={() => scrollToSection('diferenciais')} className="text-white hover:text-primary-400 transition font-medium">
+            <button onClick={() => scrollToSection('diferenciais')} className="text-white hover:text-primary-400 transition font-medium cursor-pointer">
               Diferenciais
             </button>
             <ButtonOutlined onClick={() => scrollToSection('contato')} size="sm">
@@ -79,16 +79,16 @@ const Header = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 flex flex-col gap-2">
-            <button onClick={() => scrollToSection('home')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
+            <button onClick={() => scrollToSection('home')} className="text-white hover:text-primary-400 transition font-medium text-left py-3 cursor-pointer">
               Início
             </button>
-            <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
+            <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-primary-400 transition font-medium text-left py-3 cursor-pointer">
               Sobre
             </button>
-            <button onClick={() => scrollToSection('servicos')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
+            <button onClick={() => scrollToSection('servicos')} className="text-white hover:text-primary-400 transition font-medium text-left py-3 cursor-pointer">
               Serviços
             </button>
-            <button onClick={() => scrollToSection('diferenciais')} className="text-white hover:text-primary-400 transition font-medium text-left py-3">
+            <button onClick={() => scrollToSection('diferenciais')} className="text-white hover:text-primary-400 transition font-medium text-left py-3 cursor-pointer">
               Diferenciais
             </button>
             <div className="border-t border-slate-500 my-2"></div>
@@ -96,14 +96,14 @@ const Header = () => {
               href="https://wa.me/5541995311272"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-primary-400 transition font-medium text-left py-3 flex items-center gap-2"
+              className="text-white hover:text-primary-400 transition font-medium text-left py-3 flex items-center gap-2 cursor-pointer"
             >
               <Phone size={18} />
               <span>(41) 99531-1272</span>
             </a>
             <a
               href="mailto:engenharia@melucky.com.br"
-              className="text-white hover:text-primary-400 transition font-medium text-left py-3 flex items-center gap-2"
+              className="text-white hover:text-primary-400 transition font-medium text-left py-3 flex items-center gap-2 cursor-pointer"
             >
               <Mail size={18} />
               <span>engenharia@melucky.com.br</span>
