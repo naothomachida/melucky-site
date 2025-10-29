@@ -26,9 +26,9 @@ const Header = () => {
       <div className="bg-slate-700 text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <a href="tel:+5541999491772" className="flex items-center gap-2 hover:text-primary-400 transition">
+            <a href="tel:+5541995311272" className="flex items-center gap-2 hover:text-primary-400 transition">
               <Phone size={16} />
-              <span>(41) 9949-1772</span>
+              <span>(41) 99531-1272</span>
             </a>
             <a href="mailto:engenharia@melucky.com.br" className="flex items-center gap-2 hover:text-primary-400 transition">
               <Mail size={16} />

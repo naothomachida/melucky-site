@@ -25,8 +25,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-gray-300">
                 <Phone size={18} className="text-primary-400" />
-                <a href="tel:+5541999491772" className="hover:text-primary-400 transition">
-                  (41) 9949-1772
+                <a href="tel:+5541995311272" className="hover:text-primary-400 transition">
+                  (41) 99531-1272
                 </a>
               </div>
               <div className="flex items-center gap-2 text-gray-300">
