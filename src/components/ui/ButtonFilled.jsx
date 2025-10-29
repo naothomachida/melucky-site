@@ -12,7 +12,7 @@ const ButtonFilled = ({ children, onClick, className = '', icon: Icon, size = 'l
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`bg-white text-slate-900 rounded-lg font-bold hover:bg-gray-100 transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed ${sizeClasses[size]} ${className}`}
+      className={`bg-white text-slate-900 rounded-lg font-bold hover:bg-gray-100 transition flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${sizeClasses[size]} ${className}`}
     >
       {children}
       {Icon && <Icon size={20} />}
